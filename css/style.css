@@ -1,0 +1,770 @@
+@charset "utf-8";
+
+#hamburger {
+  display: none;
+}
+
+#wrap {
+  overflow: hidden;
+}
+
+.container {
+  height: 100vh;
+}
+
+.banner {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.bannerVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  z-index: -1;
+}
+
+.video-content {
+  position: absolute;
+  width: 590px;
+  height: 114px;
+  top: 483px;
+  left: 64px;
+  color: #fff;
+}
+
+.video-content .video-content-txt {
+  font-family: "Peugeot New";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 65px;
+}
+
+.video-content .video-content-txt2 {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin-top: 12px;
+}
+
+.video-content .video-content-txt2 a {
+  color: #00a7cf;
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-left: 4px;
+}
+
+.header-area {
+  position: absolute;
+  font-family: "PeugeotNew";
+  text-transform: uppercase;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 160px;
+  padding: 27px 64px;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  transition: 0.1s;
+  z-index: 9999;
+}
+
+.header-area .header-logo {
+  top: 0;
+  left: 0;
+  width: 98px;
+  height: 111px;
+}
+
+.header-area .main-menu,
+.header-area .main-menu.right {
+  display: flex;
+  margin-right: -72px;
+}
+
+.header-area .main-menu .menu,
+.header-area .main-menu.right .menu {
+  margin-right: 72px;
+  letter-spacing: 2px;
+  transition: 0.5s;
+}
+
+.header-area .main-menu .menu:hover,
+.header-area .main-menu.right .menu:hover {
+  color: #00a7cf;
+}
+
+.sub-menu-box {
+  position: fixed;
+  top: 160px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 128px);
+  height: 50%;
+  transition: 0.5s;
+  background-color: #fff;
+  opacity: 0;
+  z-index: -1;
+}
+
+.sub-menu-box.active {
+  opacity: 1;
+  z-index: 99;
+}
+
+.sub-menu-box .sub-menu {
+  display: flex;
+  justify-content: space-between;
+  width: 46.24vw;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 99;
+  transition: 0.3s;
+  top: 48px;
+  opacity: 0;
+}
+
+.sub-menu-box .sub-menu.active {
+  opacity: 1;
+}
+
+.sub-menu-box .sub-menu li {
+  font-family: "Peugeot New";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 22px;
+  transition: 0.3s;
+  color: #181818;
+  z-index: 9999;
+}
+
+.sub-menu-box .sub-menu li:hover {
+  color: #00a7cf;
+}
+
+.sub-menu-content-newcars {
+  position: fixed;
+  width: 70vw;
+  top: 226px;
+  transform: translateX(-50%);
+  left: 50%;
+  opacity: 0;
+  z-index: -1;
+}
+
+.sub-menu-content-newcars.active {
+  opacity: 1;
+  z-index: 99;
+}
+
+.sub-menu-content-newcars .sub-menu-content {
+  display: flex;
+  flex-wrap: wrap;
+  opacity: 0;
+  z-index: 99;
+  transition: 0.5s;
+}
+
+.sub-menu-content-newcars .sub-menu-content li:hover {
+  color: #00a7cf;
+}
+
+.sub-menu-content-newcars .sub-menu-content.active {
+  opacity: 1;
+}
+
+.sub-menu-content-newcars .sub-menu-content li {
+  padding: 54px 32px;
+  margin: 0 auto;
+}
+
+.sub-menu-content-newcars .sub-menu-content li:first-child {
+  margin: 0 50px;
+}
+
+.sub-menu-content-newcars .sub-menu-content.elec li:last-child {
+  margin-left: 10px;
+}
+
+.sec-1 .container {
+  background: url(../image/sec1-main.webp) no-repeat center;
+  background-size: cover;
+  min-width: 100%;
+  height: auto;
+}
+
+.sec-1 .container .new308-txt-box {
+  width: 584px;
+  height: 100vh;
+  background-color: rgba(24, 24, 24, 0.7);
+  margin-left: 4rem;
+  position: relative;
+  padding-top: 80px;
+  padding-left: 32px;
+}
+
+.sec-1 .container .new308-txt-box .new308-txt-header {
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 44px;
+  color: #ffffff;
+  position: absolute;
+}
+
+.sec-1 .container .new308-txt-box .new308-txt-header .new-txt-header-1 {
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.sec-1 .container .new308-txt-box .new308-txt-body {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.sec-1 .container .new308-txt-box .new308-txt-body .new-txt-body-head {
+  font-family: "PeugeotNew";
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 86px;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+
+.sec-2 .container {
+  background-color: #ffffff;
+  padding: 2rem;
+  height: auto;
+  transition: all 1s ease;
+}
+
+.sec-2 .container.active {
+  padding: 0;
+}
+
+.sec-2 .container .sec-2-main-box {
+  height: 100vh;
+  position: relative;
+}
+
+.sec-2 .container .sec-2-main-box .sec-2-txt-box {
+  position: absolute;
+  top: 40%;
+  /* transform: translateY(-50%); */
+  width: 481px;
+  height: 237px;
+  left: 102px;
+  background: rgba(24, 24, 24, 0.7);
+  padding-left: 3rem;
+}
+
+.sec-2 .container .sec-2-main-box .sec-2-txt-box .sec-2-header {
+  /* position: absolute; */
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 3;
+  color: #ffffff;
+}
+
+.sec-2 .container .sec-2-main-box .sec-2-txt-box .sec-2-e208 {
+  font-family: "PeugeotNew";
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 65px;
+  color: #00a7cf;
+  margin-bottom: 16px;
+}
+
+.main-btn {
+  width: 132px;
+  height: 42px;
+  border: 3px solid #00a7cf;
+  box-sizing: border-box;
+  font-size: 1rem;
+  color: #00a7cf;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-btn:hover {
+  background-color: #00a7cf;
+  color: #ffffff;
+}
+
+.sec-3 {
+  height: auto;
+  padding: 128px 0;
+}
+
+.sec-3 .container {
+  width: 100%;
+  height: 76.3vh;
+  background: rgba(24, 24, 24, 0.9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 64px;
+}
+
+.sec-3 .container .mask {
+  width: 67vw;
+  height: 47.4vh;
+  overflow: hidden;
+  margin-right: 0;
+}
+
+.sec-3 .container .mask img {
+  max-width: 100%;
+}
+
+.sec-3 .container .sec-3-txt {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 47.4vh;
+}
+
+.sec-3 .container .sec-3-txt h1 {
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 65px;
+  color: #ffffff;
+}
+
+.sec-4 .container {
+  padding: 0 64px;
+  align-items: center;
+}
+
+.sec-4 .event {
+  font-family: "PeugeotNew";
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 65px;
+  text-align: start;
+  margin: 40px 0;
+}
+
+.sec-4 .sec-4-content-box {
+  width: 93.4vw;
+  display: flex;
+  justify-content: center;
+}
+
+.sec4-content {
+  /* width: 33.333%; */
+}
+
+.sec4-content:nth-child(even) {
+  margin: 0 20px;
+}
+
+.sec-4 .sec-4-content-img-box {
+  height: 468px;
+  overflow: hidden;
+}
+
+.sec-4 .sec-4-content-img-box img {
+  box-sizing: border-box;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  transition: all 0.3s ease-in-out;
+  max-width: 100%;
+  height: 100%;
+}
+
+.sec-4 .sec-4-content-img-box img:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+}
+
+.sec-4 .news-box {
+  margin-top: 32px;
+}
+
+.sec-4 .news-box h1 {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 41px;
+  color: #181818;
+  margin-bottom: 32px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sec-4 .news-box p {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  color: rgba(24, 24, 24, 0.7);
+  margin-bottom: 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.sec-4 .sec-4-content-box a {
+  margin-top: 4.75rem;
+}
+
+.footer {
+  width: 100%;
+  background: rgba(24, 24, 24, 0.9);
+}
+.footer .container {
+  width: 80vw;
+  margin: 0 auto;
+  padding: 60px 0;
+  height: auto;
+}
+
+.footer .footer-box {
+  display: flex;
+  height: 300px;
+  justify-content: space-around;
+}
+
+.footer .footer-box .box-inner h1 {
+  font-family: "PeugeotNew";
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 22px;
+  margin-bottom: 32px;
+}
+
+.footer .footer-box .box-inner P {
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 22px;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.footer .footer-box .footer-logo {
+  width: 152px;
+  height: 168px;
+}
+
+.footer .footer-copy {
+  font-family: "PeugeotNew";
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 22px;
+  color: #ffffff;
+  text-align: center;
+}
+
+.top-btn {
+  cursor: pointer;
+  position: fixed;
+  border-radius: 50%;
+  width: 64px;
+  height: 64px;
+  background-color: #00a7cf;
+  color: #ffffff;
+  right: 40px;
+  bottom: 40px;
+  text-align: center;
+  z-index: 9999;
+}
+
+.top-btn span {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+@media (max-width: 1400px) {
+  #hamburger {
+    display: block;
+    z-index: 9999;
+    position: relative;
+    width: 32px;
+    height: 20px;
+    cursor: pointer;
+  }
+  #hamburger span {
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    border-radius: 3px;
+    background-color: #fff;
+    transition: all 0.4s;
+    top: 5px;
+    left: 10px;
+  }
+
+  #hamburger span:first-child {
+    top: 0;
+    left: 0;
+  }
+
+  #hamburger span:nth-child(2) {
+    top: 55%;
+    transform: translateY(-50%);
+    left: 0;
+  }
+
+  #hamburger span:last-child {
+    top: 100%;
+    left: 0;
+  }
+
+  #hamburger.active span:first-child {
+    top: 50%;
+    transform: rotate(45deg);
+  }
+  #hamburger.active span:nth-child(2) {
+    opacity: 0;
+  }
+  #hamburger.active span:last-child {
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+
+  .header-area .main-menu,
+  .header-area .main-menu.right,
+  .sub-menu-box {
+    display: none;
+  }
+
+  .header-area .header-logo {
+    margin: 0 auto;
+  }
+  .header-area .main-menu,
+  .header-area .main-menu.right {
+    background: rgba(24, 24, 24, 0.7);
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: #fff;
+    font-size: 4vw;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 20% 10%;
+    transform: translateY(-100%);
+    transition: 1s;
+  }
+  .header-area .main-menu .menu {
+    color: #fff;
+    z-index: 99;
+  }
+  .header-area .main-menu.right .menu {
+    display: none;
+  }
+
+  .header-area .main-menu.active {
+    transform: translateY(0);
+    display: flex;
+  }
+
+  .main-btn {
+    width: 100px;
+    height: 30px;
+    border: 1px solid #00a7cf;
+    box-sizing: border-box;
+    font-size: 1rem;
+    color: #00a7cf;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sec4-content:nth-child(2n) {
+    margin-left: 20px;
+  }
+
+  .sec4-content:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 1180px) {
+  .sec-3 {
+    height: auto;
+    padding: 128px 0;
+  }
+
+  .sec-3 .container {
+    width: 100%;
+    height: 76.3vh;
+    background: rgba(24, 24, 24, 0.9);
+    flex-direction: column;
+    padding: 0;
+    position: relative;
+  }
+
+  .sec-3 .container .mask {
+    width: 100%;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-110%);
+  }
+
+  .sec-3 .container .sec-3-txt {
+    height: auto;
+  }
+
+  .sec-3 .container .sec-3-txt h1 {
+    position: absolute;
+    top: 64px;
+    left: 2rem;
+  }
+
+  .sec-3 .container .sec-3-txt a {
+    position: absolute;
+    bottom: 64px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .sec-4 .container {
+    padding-bottom: 32px;
+    align-items: center;
+    height: auto;
+  }
+
+  .sec-4 .sec-4-content-box {
+    width: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .sec4-content {
+    width: 80vw;
+    margin-bottom: 36px;
+  }
+
+  .sec4-content:nth-child(even) {
+    margin: 0;
+  }
+  .sec-4 .news-box {
+    margin-top: 16px;
+  }
+}
+
+@media (max-width: 660px) {
+  .header-area {
+    padding: 27px 16px;
+  }
+  .video-content {
+    left: 16px;
+  }
+
+  .video-content .video-content-txt {
+    font-size: 1.5rem;
+    line-height: 32px;
+  }
+
+  .video-content .video-content-txt2 {
+    font-size: 1rem;
+    margin-top: 8px;
+  }
+
+  .sec-1 .container .new308-txt-box {
+    width: 584px;
+    height: 100vh;
+    background-color: rgba(24, 24, 24, 0.7);
+    position: relative;
+    padding-top: 52px;
+    padding-left: 16px;
+    margin: 0 auto;
+  }
+
+  .sec-1 .container .new308-txt-box .new308-txt-header {
+    font-size: 20px;
+    line-height: 27px;
+  }
+
+  .sec-1 .container .new308-txt-box .new308-txt-header .new-txt-header-1 {
+    margin-bottom: 8px;
+  }
+  .sec-1 .container .new308-txt-box .new308-txt-body .new-txt-body-head {
+    font-size: 2rem;
+    line-height: 48px;
+    margin-bottom: 10px;
+  }
+
+  .sec-2 .container {
+    padding: 1rem;
+  }
+
+  .sec-2 .container .sec-2-main-box .sec-2-txt-box {
+    top: 40%;
+    width: 285px;
+    height: 198px;
+    left: 0px;
+    background: rgba(24, 24, 24, 0.7);
+    padding: 2rem;
+  }
+
+  .sec-2 .container .sec-2-main-box .sec-2-txt-box .sec-2-header {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .sec-3 .container .sec-3-txt h1 {
+    font-size: 2rem;
+    line-height: 32px;
+  }
+
+  .sec-4 .container {
+    padding: 0 16px;
+    padding-bottom: 32px;
+  }
+
+  .sec4-content {
+    width: 100%;
+    margin-bottom: 36px;
+  }
+
+  .sec-4 .event {
+    font-size: 20px;
+    line-height: 26px;
+    text-align: start;
+    margin-top: 0;
+  }
+
+  .footer .container {
+    width: 100%;
+    padding: 16px;
+  }
+
+  .footer .footer-box {
+    display: inherit;
+    flex-wrap: wrap;
+    height: auto;
+    margin-top: 32px;
+    margin-bottom: 332px;
+    position: relative;
+  }
+
+  .footer .footer-box .footer-logo {
+    position: absolute;
+    bottom: -300px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .footer .footer-box .box-inner {
+    margin-bottom: 32px;
+  }
+}
